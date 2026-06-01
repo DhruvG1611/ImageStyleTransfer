@@ -1,0 +1,62 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# ── Model weights (too large for git — download manually) ─────────────────────
+backend/model/*.pth
+backend/model/*.pt
+backend/model/*.bin
+backend/model/*.ckpt
+
+# ── Environment / secrets ─────────────────────────────────────────────────────
+backend/.env
+frontend/.env
+.env
+.env.*
+!.env.example
+!frontend/.env.example
+
+# ── Node / Frontend ───────────────────────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+node_modules/
+
+# ── Test / scratch output ─────────────────────────────────────────────────────
+images/output_test.jpg
+images/stylized_output.png
+images/tiny_test.jpg
+
+# ── IDE & OS ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+uvicorn*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+*.bak
+*.swp
+*.orig
